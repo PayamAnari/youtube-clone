@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import { Link } from '@inertiajs/vue3';
 import MenuIcon from 'vue-material-design-icons/Menu.vue';
+import MagnifyIcon from 'vue-material-design-icons/Magnify.vue';
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -40,6 +41,7 @@ const showingNavigationDropdown = ref(false);
                "
                placeholder="Search"
                />
+               <MagnifyIcon class="mx-6" fillColor="#FFFFFF" :size="23"  />
               </div>
           </div>
       </div>
