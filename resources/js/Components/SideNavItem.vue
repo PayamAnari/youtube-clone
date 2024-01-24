@@ -1,7 +1,16 @@
 <template>
-  <li class="text-white text-sm font-semibold text-center hover:bg-gray-700 rounded-lg cursor-pointer">
-      Home
-  </li>
+  <li 
+  :class="[!openSideNav ? 'p-2' : 'flex items-center p-2']"
+  class="text-white text-sm font-semibold text-center hover:bg-gray-700 rounded-lg cursor-pointer"
+  >
+  <div :class="[!openSideNav ? 'w-full flex justify-center' : ''] ">
+     <component :is="icon" />
+  </div> 
+  <div :class="[!openSideNav ? '' : 'mt-1 ml-4'] ">
+    <span v-if="!openSideNav">{{ iconString.substring(0, 4) }}</span>
+    <span v-else>{{ iconString }}</span>
+  </div> 
+</li>
   
 </template>
 
