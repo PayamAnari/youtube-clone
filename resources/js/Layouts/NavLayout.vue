@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import { Link } from '@inertiajs/vue3';
 import MenuIcon from 'vue-material-design-icons/Menu.vue';
 import MagnifyIcon from 'vue-material-design-icons/Magnify.vue';
+import SideNavItem from '@/Components/SideNavItem.vue';
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -54,7 +55,7 @@ const showingNavigationDropdown = ref(false);
       </div>
       <div id="SideNav" class="h-[100%] fixed z-0 bg-black w-[240px]">
          <ul class="mt-[60px] w-full">
-
+            <SideNavItem />      
          </ul>
     </div>
      <div id="SideNavOverlay">
