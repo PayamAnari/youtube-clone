@@ -44,9 +44,18 @@ const showingNavigationDropdown = ref(false);
                <MagnifyIcon class="mx-6" fillColor="#FFFFFF" :size="23"  />
               </div>
           </div>
+          <div>
+             <img
+             class="rounded-full mx-8"
+             width="35"
+             src="https://yt3.ggpht.com/yti/AGOGRCov6Dg4QEFhzY2CNxTV6tTEgWS9rMhOK3BxUQJj=s88-c-k-c0x00ffffff-no-rj"
+             >
+          </div>
       </div>
-      <div id="SideNav">
+      <div id="SideNav" class="h-[100%] fixed z-0 bg-black w-[240px]">
+         <ul class="mt-[60px] w-full">
 
+         </ul>
     </div>
      <div id="SideNavOverlay">
 
