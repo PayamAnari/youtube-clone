@@ -13,6 +13,34 @@ const showingNavigationDropdown = ref(false);
             <button class="p-2 ml-3 rounded-full hover:bg-gray-700 inline-block cursor-pointer">
               <MenuIcon fillColor="#FFFFFF" :size="26" />
             </button>
+            <div class="mx-2"></div>
+            <div class="flex text-white items-center justify-center mr-10 cursor-pointer">
+               YOUTUBE
+            </div>
+          </div>
+          <div class="w-[600px] md:block hidden">
+              <div class="rounded-full flex items-center bg-[#222222]">
+               <input 
+               type="text"
+               class="
+               form-control
+               block w-full px-5
+               py-1.5 text-base
+               font-normal text-gray-200
+               bg-black placeholder-gray-400
+               bg-clip-padding border border-solid
+               border-l-gray700
+               border-y-gray-700
+               rounded-l-full
+               transition 
+               ease-in-out m-0
+               border-transparent
+               focus:ring-0
+
+               "
+               placeholder="Search"
+               />
+              </div>
           </div>
       </div>
       <div id="SideNav">
