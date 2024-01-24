@@ -17,4 +17,21 @@
   import VideoPlusOutlineIcon from 'vue-material-design-icons/VideoPlusOutline.vue';
   import DeleteIcon from 'vue-material-design-icons/Delete.vue';
 
+  const props = defineProps ({
+    openSideNav : Boolean,
+    iconString: String,
+  })
+
+  const { openSideNav, iconString } = toRefs(props);
+
+  let icon = ref(null);
+
+  if (iconString.value === 'Home') icon = Home
+  if (iconString.value === 'Subscriptions') icon = FolderPlayOutline
+  if (iconString.value === 'Library') icon = ImageMultiple
+  if (iconString.value === 'Liked') icon = ThumbUpOutline
+  if (iconString.value === 'History') icon = History
+  if (iconString.value === 'Watch Later') icon = ClockOutline
+  if (iconString.value === 'Add Video') icon = VideoPlusOutlineIcon
+  if (iconString.value === 'Delete video') icon = DeleteIcon
 </script>
