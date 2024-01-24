@@ -6,8 +6,16 @@ const showingNavigationDropdown = ref(false);
 </script>
 
 <template>
-    <div>
-      This is a Nav
+    <div class="relative">
+      <div id="TopNav" class="w-[100%] h-[60px] fixed bg-black z-20 flex items-center justify-between">
+
+      </div>
+      <div id="SideNav">
+
+    </div>
+     <div id="SideNavOverlay">
+
+     </div>
       <slot />
     </div>
 </template>

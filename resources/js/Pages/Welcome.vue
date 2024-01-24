@@ -24,7 +24,6 @@ defineProps({
     <Head title="Youtube" />
 
     <NavLayout>
-      Welcome
     </NavLayout>
 
 </template>
