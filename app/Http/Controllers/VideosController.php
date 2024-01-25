@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Video;
 use Illuminate\Http\Request;
 
-class VideoController extends Controller
+class VideosController extends Controller
 {
     /**
      * Display a listing of the resource.
