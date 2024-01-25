@@ -18,6 +18,24 @@
                showVideo ? 'delay-350 hidden' : ''
              "
            />
+           <div class="w-full h-full aspect-video cursor-pointer"
+            :class="showVideo ? '' : 'delay-350 hidden'"
+           >
+            <video ref="video" :src="videoUrl || ''" type="video/mp4" />
+           </div>
+        </div>
+        <div>
+          <div class="flex mt-1.5">
+             <div>
+               <img 
+               class="rounded-full m-1.5 mt-2 flex items-baseline w-8 h-8"
+               :src="image || ''"
+               />
+             </div>
+             <div class="px-1.5 text-white mt-1">
+                <div class="text-[17px] font-extrabold w-full cursor-pointer">{{ title.substring(0, 100) }}</div>
+             </div>
+          </div>
         </div>
      </div>
   </div>
