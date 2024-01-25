@@ -17,7 +17,11 @@ import ThumbDownOutline from 'vue-material-design-icons/ThumbDownOutline.vue'
     <Head title="Youtube" />
 
     <NavLayout>
- 
+        <div class="xl:flex">
+           <div class="p-3">
+             <video src="/videos/car.mp4" controls autoplay />
+           </div>
+        </div>
     </NavLayout>
 
 </template>
