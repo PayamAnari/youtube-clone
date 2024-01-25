@@ -5,14 +5,15 @@ import MenuIcon from 'vue-material-design-icons/Menu.vue';
 import MagnifyIcon from 'vue-material-design-icons/Magnify.vue';
 import SideNavItem from '@/Components/SideNavItem.vue';
 
-const showingNavigationDropdown = ref(false);
+let openSideNav = ref(true)
+
 </script>
 
 <template>
     <div class="relative">
       <div id="TopNav" class="w-[100%] h-[60px] fixed bg-black z-20 flex items-center justify-between">
           <div class="flex items-center">
-            <button class="p-2 ml-3 rounded-full hover:bg-gray-700 inline-block cursor-pointer">
+            <button @click="openSideNav = !openSideNav" class="p-2 ml-3 rounded-full hover:bg-gray-700 inline-block cursor-pointer">
               <MenuIcon fillColor="#FFFFFF" :size="26" />
             </button>
             <div class="mx-2"></div>
@@ -53,9 +54,11 @@ const showingNavigationDropdown = ref(false);
              >
           </div>
       </div>
-      <div id="SideNav" class="h-[100%] fixed z-0 bg-black w-[240px]">
+      <div id="SideNav" class="h-[100%] fixed z-0 bg-black "
+      :class="[!openSideNav ? 'w-[70px]' : 'w-[240px]']"
+      >
          <ul class="mt-[60px] w-full">
-            <SideNavItem />      
+            <SideNavItem :openSideNav="openSideNav" iconString="Home" />      
          </ul>
     </div>
      <div id="SideNavOverlay">
