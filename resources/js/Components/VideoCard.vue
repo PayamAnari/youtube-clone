@@ -1,21 +1,24 @@
 <template>
   <div class="relative">
-     <div class="rounded-lg bg-black m-2"
-        :class="[
-          show
-          ? 'absolute z-30 transition ease-in-out delay-150 hover:translate-y-8 hover:scale-125 hover:bg-[#202020] duration-300'
-          : ''
-        ]"
+    <div
+            class="rounded-lg bg-black m-2"
+            :class="[
+                show && width > 639
+                ? 'absolute z-30 transition ease-in-out delay-150 hover:translate-y-8 hover:scale-125 hover:bg-[#202020] duration-300'
+                : ''
+            ]"
         >
-        <div @mouseover="show = true" @mouseleave="show = false; showVideo= false">
+        <div @mouseover="show = true" 
+             @mouseleave="show = false; showVideo= false"
+             >
            <img
              class="aspect-video cursor-pointer"
-             src="thumbnail || ''"
+             :src="thumbnail || ''"
              :class="
-             show 
+             [show 
                ? 'transition ease-in-out delay-150 rounded-l-lg'
                : 'rounded-lg',
-               showVideo ? 'delay-350 hidden' : ''
+               showVideo ? 'delay-350 hidden' : '']
              "
            />
            <div class="w-full h-full aspect-video cursor-pointer"
@@ -64,6 +67,14 @@ const { title, user, views, image, videoUrl, thumbnail } = toRefs(props)
 let show = ref(false)
 let showVideo = ref(false)
 let video = ref(null)
+let width = ref(document.documentElement.clientWidth)
+
+onMounted(() => {
+  window.addEventListener("resize", () => {
+    width.value = document.documentElement.clientWidth
+  
+    })
+})
 
 watch(() => show.value, (show) => {
   if (show) {
