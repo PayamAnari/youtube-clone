@@ -34,6 +34,10 @@
              </div>
              <div class="px-1.5 text-white mt-1">
                 <div class="text-[17px] font-extrabold w-full cursor-pointer">{{ title.substring(0, 100) }}</div>
+                <div class="text-[14px] text-gray-300 font-extrabold flex gap-1 items-center cursor-pointer">
+                  {{ user.substring(0, 30) }} <CheckCircle fillColor="#888888" :size="17" />
+                </div>
+                <div class="text-sm mb-1 text-gray-300 cursor-pointer">{{ views }}</div>
              </div>
           </div>
         </div>
