@@ -69,15 +69,20 @@ let openSideNav = ref(true)
             <SideNavItem :openSideNav="openSideNav" iconString="Liked" />
             <SideNavItem :openSideNav="openSideNav" iconString="History" />
             <SideNavItem :openSideNav="openSideNav" iconString="Watch Later" /> 
-            <div if="openSideNav">
+            <div v-if="openSideNav">
               <div class="border-b border-b-gray-700 my-2.5" />
-            </div> 
-            <div class="text-gray-400 text-[14px] text=extrabold">
+              <div class="text-gray-400 text-[14px] text=extrabold">
                 About Press Copyright
             <div>Contact us</div>
             Create Advertise Developers
           </div> 
           <div class="border-b border-b-gray-700 my-2.5" />
+          <div class="text-gray-400 text-[14px] text=extrabold">
+                Terms Privacy Policy & Safety
+            <div>How Youtube works</div>
+            <span>Test new features</span>
+          </div> 
+            </div>          
          </ul>
     </div>
      <div id="SideNavOverlay">
@@ -86,3 +91,9 @@ let openSideNav = ref(true)
       <slot />
     </div>
 </template>
+
+<style>
+  body {
+    background-color:black;
+  }
+</style>
