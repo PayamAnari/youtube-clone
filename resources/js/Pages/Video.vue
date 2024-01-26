@@ -33,9 +33,24 @@ import ThumbDownOutline from 'vue-material-design-icons/ThumbDownOutline.vue'
                  <div class="text-sm text-gray-400 font-extrabold">1k views - 3 days ago</div>
                </div>
              </div>
-             <div class="bg-[3F3F3F] rounded-lg w-full p-3 text-white">
+             <div class="bg-[#3F3F3F] rounded-lg w-full p-3 text-white">
                 <div class="text-white text-lg font-extrabold">This a comment</div>
+                <div class="text-sm font-extrabold mb-6">Hi Developers, In this tutorial, we will build a full-stack 
+                </div>
+                <div class="text-sm font-extrabold mb-6">Hi Developers, In this tutorial, we will build a full-stack YouTube clone using the powerful combination of Vue.js, Javascript, Tailwind CSS, Laravel, and Inertia.js
+                </div>
              </div>
+             <div class="mt-6">
+                   <div class="text-white text-lg font-extrabold">
+                       12 Comments
+                   </div>
+                   <div class="flex items-flex mb-4 mt-2 ">
+                    <img 
+                      class="rounded-full mt-2 w-12 h-12"
+                      :src="`https://picsum.photos/id/${(Math.random() * 100).toFixed(0)}/100` || ''"
+                     />
+                   </div>
+                </div>
            </div>
         </div>
     </NavLayout>
