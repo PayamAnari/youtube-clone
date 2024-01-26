@@ -60,14 +60,18 @@ import ThumbDownOutline from 'vue-material-design-icons/ThumbDownOutline.vue'
                         the application, such as video uploads, file uploads, and video playback when hovering over a thumbnail.
                        </div>
                        <div class="mt-4 flex items-center">
-                         <ThumbUpOutline fillcolor="#FFFFFF" :size="20" class="pr-2" />
+                         <ThumbUpOutline fillColor="#FFFFFF" :size="20" class="pr-2" />
                          <div class="text-gray-400 text-sm font-extrabold pr-10">
-                              
+                              {{ (Math.random() * 100 ).toFixed(0) }}
                          </div>
+                          <ThumbDownOutline fillColor="#FFFFFF" :size="20" class="pr-2" />
                        </div>
                      </div>
                    </div>
                 </div>
+           </div>
+           <div class="w-[500px] p-3 sm:block hidden">
+
            </div>
         </div>
     </NavLayout>
