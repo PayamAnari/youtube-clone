@@ -49,6 +49,23 @@ import ThumbDownOutline from 'vue-material-design-icons/ThumbDownOutline.vue'
                       class="rounded-full mt-2 w-12 h-12"
                       :src="`https://picsum.photos/id/${(Math.random() * 100).toFixed(0)}/100` || ''"
                      />
+                     <div class="pl-6 mt-1">
+                      <div class="text-white font-extrabold flex items-baseline">
+                      <div>John Doe</div>
+                        <div class="text-gray-400 pl-3">
+                           10 days ago
+                        </div>
+                      </div>
+                      <div class="text-gray-200 text-sm font-semibold">
+                        the application, such as video uploads, file uploads, and video playback when hovering over a thumbnail.
+                       </div>
+                       <div class="mt-4 flex items-center">
+                         <ThumbUpOutline fillcolor="#FFFFFF" :size="20" class="pr-2" />
+                         <div class="text-gray-400 text-sm font-extrabold pr-10">
+                              
+                         </div>
+                       </div>
+                     </div>
                    </div>
                 </div>
            </div>
