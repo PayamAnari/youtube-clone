@@ -19,5 +19,19 @@ watch(() => show.value, (show) => {
 </script>
 
 <template>
-  
+        <div @mouseover="show = true" 
+             @mouseleave="show = false; "
+             >
+           <img
+             width="340"
+             class="aspect-video cursor-pointer rounded-lg"
+             :src="vid.thumbnail || ''"
+             :class="show ? 'delay-350 hidden' : ''"
+           />
+           <div class="w-full h-full aspect-video cursor-pointer"
+            :class="showVideo ? '' : 'delay-350 hidden'"
+           >
+            <video ref="video" :src="videoUrl || ''" type="video/mp4" />
+           </div>
+        </div>
 </template>
