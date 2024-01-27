@@ -89,6 +89,21 @@ import NavLayout from '@/Layouts/NavLayout.vue';
              >
              <span class="text-red-500">This is an error</span>
          </div>
+         <div class="my-5"></div>
+           <div class="float-right">
+             <button
+             class="
+             text-white bg-green-600
+             hover:bg-green-700
+             font-bold py-2
+             px-4 rounded
+             cursor-pointer
+             "
+             >
+              Upload Video
+             </button>
+           </div>
+
        </form>
     </div>
    </NavLayout>
