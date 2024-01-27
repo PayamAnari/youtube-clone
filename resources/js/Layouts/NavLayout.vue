@@ -6,6 +6,9 @@ import MagnifyIcon from 'vue-material-design-icons/Magnify.vue';
 import SideNavItem from '@/Components/SideNavItem.vue';
 
 let openSideNav = ref(true)
+let openSideNavOverlay = ref(false)
+let SideNaOverlay = ref(null)
+let width = ref(document.documentElement.clientWidth)
 
 </script>
 
