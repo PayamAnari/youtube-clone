@@ -29,9 +29,16 @@ watch(() => show.value, (show) => {
              :class="show ? 'delay-350 hidden' : ''"
            />
            <div class="w-full h-full aspect-video cursor-pointer"
-            :class="showVideo ? '' : 'delay-350 hidden'"
+            :class="show ? '' : 'delay-350 hidden'"
            >
-            <video ref="video" :src="videoUrl || ''" type="video/mp4" />
+            <video width="340" ref="video" :src="vid.video || ''" type="video/mp4" />
            </div>
         </div>
+        <div class="px-1.5 pl-3 text-white mt-1">
+                <div class="text-[17px] font-extrabold w-full cursor-pointer">{{ title.substring(0, 100) }}</div>
+                <div class="text-[14px] text-gray-300 font-extrabold flex gap-1 items-center cursor-pointer">
+                  {{ user.substring(0, 30) }} <CheckCircle fillColor="#888888" :size="17" />
+                </div>
+                <div class="text-sm mb-1 text-gray-300 cursor-pointer">{{ views }}</div>
+             </div>
 </template>
