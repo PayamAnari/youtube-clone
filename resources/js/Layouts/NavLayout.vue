@@ -1,14 +1,23 @@
 <script setup>
-import { ref } from 'vue';
-import { Link } from '@inertiajs/vue3';
+import { ref, onMounted } from 'vue';
+import { usePage, Link } from '@inertiajs/vue3';
 import MenuIcon from 'vue-material-design-icons/Menu.vue';
 import MagnifyIcon from 'vue-material-design-icons/Magnify.vue';
 import SideNavItem from '@/Components/SideNavItem.vue';
 
 let openSideNav = ref(true)
 let openSideNavOverlay = ref(false)
-let SideNaOverlay = ref(null)
+let sideNavOverlay = ref(null)
 let width = ref(document.documentElement.clientWidth)
+
+onMounted(() => {
+  resize()
+  sideNavOverlay.value.classList.value = sideNavOverlay.value.classList.value = 'hidden'
+  window.addEventListener('resize', () => {
+    width.value = document.documentElement.clientWidth;
+    resize()
+  })
+})
 
 </script>
 
