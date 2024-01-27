@@ -19,6 +19,15 @@ onMounted(() => {
   })
 })
 
+const resize = () => {
+  if (width.value < 1200 && openSideNav.value) {
+    openSideNav.value = false
+  }
+  if (width.value > 1279 && !openSideNav.value) {
+    openSideNav.value = true
+  }
+}
+
 </script>
 
 <template>
