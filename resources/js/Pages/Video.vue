@@ -4,6 +4,7 @@ import NavLayout from '@/Layouts/NavLayout.vue';
 import CheckCircle from 'vue-material-design-icons/CheckCircle.vue'
 import ThumbUpOutline from 'vue-material-design-icons/ThumbUpOutline.vue'
 import ThumbDownOutline from 'vue-material-design-icons/ThumbDownOutline.vue'
+import RecommendedVideos from '@/Components/RecommendedVideos.vue'
 
 // defineProps({
 //     canLogin: {
@@ -71,7 +72,7 @@ import ThumbDownOutline from 'vue-material-design-icons/ThumbDownOutline.vue'
                 </div>
            </div>
            <div class="w-[500px] p-3 sm:block hidden">
-
+            <RecommendedVideos />
            </div>
         </div>
     </NavLayout>

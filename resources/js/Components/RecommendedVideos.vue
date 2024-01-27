@@ -35,10 +35,10 @@ watch(() => show.value, (show) => {
            </div>
         </div>
         <div class="px-1.5 pl-3 text-white mt-1">
-                <div class="text-[17px] font-extrabold w-full cursor-pointer">{{ title.substring(0, 100) }}</div>
-                <div class="text-[14px] text-gray-300 font-extrabold flex gap-1 items-center cursor-pointer">
-                  {{ user.substring(0, 30) }} <CheckCircle fillColor="#888888" :size="17" />
+                <div class="text-[15px] pb-1.5 font-extrabold w-full cursor-pointer">{{ vid.title }}</div>
+                <div class="text-[12px] text-gray-300 font-extrabold flex gap-1 items-center cursor-pointer">
+                  {{ vid.user }} <CheckCircle fillColor="#888888" :size="17" />
                 </div>
-                <div class="text-sm mb-1 text-gray-300 cursor-pointer">{{ views }}</div>
+                <div class="text-sm mb-1 text-gray-300 cursor-pointer">{{ vid.views }}</div>
              </div>
 </template>
