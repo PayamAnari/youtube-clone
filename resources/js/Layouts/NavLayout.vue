@@ -28,13 +28,22 @@ const resize = () => {
   }
 }
 
+const isNavOverlay = () => {
+  if (usePage().url === '/') openSideNav.value = !openSideNav.value
+  if (usePage().url === '/addVideo') openSideNavOverlay.value = !openSideNavOverlay.value
+  if (usePage().url === '/deleteVideo') openSideNavOverlay.value = !openSideNavOverlay.value
+  if (width.value < 640) openSideNavOverlay.value = !openSideNavOverlay.value
+  if (usePage().url !== '/' && width.value < 640) openSideNavOverlay.value = !openSideNavOverlay.value
+  if (usePage().props.video) openSideNavOverlay.value = !openSideNavOverlay.value
+}
+
 </script>
 
 <template>
     <div class="relative">
       <div id="TopNav" class="w-[100%] h-[60px] fixed bg-black z-20 flex items-center justify-between">
           <div class="flex items-center">
-            <button @click="openSideNav = !openSideNav" class="p-2 ml-3 rounded-full hover:bg-gray-700 inline-block cursor-pointer">
+            <button @click="isNavOverlay()" class="p-2 ml-3 rounded-full hover:bg-gray-700 inline-block cursor-pointer">
               <MenuIcon fillColor="#FFFFFF" :size="26" />
             </button>
             <div class="mx-2"></div>
