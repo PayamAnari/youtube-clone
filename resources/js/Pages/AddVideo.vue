@@ -61,7 +61,31 @@ import NavLayout from '@/Layouts/NavLayout.vue';
             focus:border-blue-600
             focus:outline-none
              "
-              placeholder="Title"
+             >
+             <span class="text-red-500">This is an error</span>
+         </div>
+         <div class="my-5"></div>
+         <div>
+            <div class="text-gray-200">Video/MP4</div>
+             <input
+             type="file"
+             class="
+             form-control
+             block
+             w-full
+             px-3
+             py-1.5
+             border
+             text-white
+             border-solid
+             border-gray-600
+             rounded
+             transition
+             ease-in-out m-0
+            focus:text-gray-700
+            focus:border-blue-600
+            focus:outline-none
+             "
              >
              <span class="text-red-500">This is an error</span>
          </div>
