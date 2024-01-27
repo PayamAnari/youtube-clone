@@ -22,6 +22,16 @@ import NavLayout from '@/Layouts/NavLayout.vue';
              <th scope="col" class="text-sm font-medium px-6 py-4 text-left">Options</th>
            </tr>
          </thead>
+         <tbody>
+           <tr class="border-b flex justify-between">
+             <td class="px-6 py-4 w-7/12 text-sm font-medium text-gray-900">
+               <video width="320" src="/videos/car.mp4" type="video/mp4" controls></video>
+             </td>
+             <td class="px-6 py-4 w-5/12 text-sm font-medium text-gray-900 relative">
+               <div class="text-white font-extrabold mb-4">This is a title</div>
+            </td>
+           </tr>
+         </tbody>
       </table>
      </div>
    </NavLayout>
