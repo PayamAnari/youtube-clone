@@ -72,7 +72,15 @@ import RecommendedVideos from '@/Components/RecommendedVideos.vue'
                 </div>
            </div>
            <div class="w-[500px] p-3 sm:block hidden">
-            <RecommendedVideos />
+            <RecommendedVideos 
+            :vid="{
+              title: 'Big city in amsterdam',
+              video: '/videos/car.mp4',
+              thumbnail: '/videos/Thumbnails/car.png',
+              user: 'Emmy Watson',
+              views: '14k views - 10 days ago',
+            }"
+            />
            </div>
         </div>
     </NavLayout>
