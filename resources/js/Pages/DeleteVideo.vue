@@ -29,6 +29,22 @@ import NavLayout from '@/Layouts/NavLayout.vue';
              </td>
              <td class="px-6 py-4 w-5/12 text-sm font-medium text-gray-900 relative">
                <div class="text-white font-extrabold mb-4">This is a title</div>
+                <div class="w-full">
+                   <button
+                   class="text-white
+                   absolute bottom-4
+                   right-4 text-xs
+                   bg-red-600
+                   hover:bg-red-700
+                   font-bold py-1 px-1
+                   float-right
+                   rounded
+                   cursor-pointer
+                   "
+                   >
+                    Delete
+                   </button>
+                </div>
             </td>
            </tr>
          </tbody>
