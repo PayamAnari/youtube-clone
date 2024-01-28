@@ -84,7 +84,8 @@ const isNavOverlay = () => {
              >
           </div>
       </div>
-      <div 
+      <div v-if="width > 639">
+        <div 
       v-if="$page.url === '/'"
       id="SideNav" class="h-[100%] fixed z-0 bg-black "
       :class="[!openSideNav ? 'w-[70px]' : 'w-[240px]']"
@@ -117,6 +118,16 @@ const isNavOverlay = () => {
             </div>          
          </ul>
     </div>
+      </div>
+
+      <div class="bg-black bg-opacity-70 fixed z-50 w-full h-screen"
+       :class="
+       openSideNavOverlay
+       ? 'animate__animated animate__fadeIn animate__faster'
+       : 'hidden z-[-1]'
+       "
+      />
+
      <div>
       <div 
       id="SideNaOverlay" 
