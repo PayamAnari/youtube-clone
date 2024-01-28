@@ -136,7 +136,7 @@ const isNavOverlay = () => {
       ref="SideNaOverlay"
       class="h-[100%] fixed z-50 bg-black mt-[9px] w-[240px] "
       :class="[
-        !openSideNavOverlay 
+        openSideNavOverlay 
         ? 'animate__animated animate__slideInLeft animate__faster' 
         : 'animate__animated animate__slideOutLeft animate__faster'
         ]"
@@ -183,6 +183,8 @@ const isNavOverlay = () => {
       :class="{
         'w-[calc(100%-70px)]' : !openSideNav,
         'w-[calc(100%-240px)]' : openSideNav,
+        'w-[100vw] xl:w-calc(100%-80px)' : $page.url !== '/',
+        'w-[100vw]' : width < 639,
       }"
       >
         <slot />
