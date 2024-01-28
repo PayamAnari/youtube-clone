@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Video;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 

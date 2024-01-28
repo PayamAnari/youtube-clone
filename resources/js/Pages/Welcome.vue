@@ -17,21 +17,16 @@ defineProps({
          
         <div v-for="video, index in videos" :key="video">
            <Link :href="route('videos.show', { id: video.id })">
-
+            <VideoCard
+            :title="video.title"
+            :user="video.user"
+            :views="video.views"
+            :image="`https://picsum.photos/id/${index}/100`"
+            :videoUrl="video.video"
+            :thumbnail="video.thumbnail"
+         />
            </Link>
         </div>
-        
-        
-        
-        
-        <VideoCard
-            title="Cool city view"
-            user="Payam Anari"
-            views="1.2M views - 1 year ago"
-            image="https://picsum.photos/id/230/100"
-            videoUrl="/videos/car.mp4"
-            thumbnail="/videos/Thumbnails/car.png"
-         />
       </div>
     </NavLayout>
 
