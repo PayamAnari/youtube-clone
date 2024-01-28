@@ -18,7 +18,19 @@ class VideosController extends Controller
      */
     public function store(Request $request)
     {
+        $image_file = null;
+        $video_file = null;
 
+        $video = new Video();
+
+        $image_file = $request->file('image');
+        $request->validate(['image' => 'required|mimes:jpg,jpeg,png|max:2048']);
+
+        $video_file = $request->file('video');
+        $request->validate(['video' => 'required|mimes:mp4,webm']);
+
+        $thumbPath = '/videos/Thumbnails/';
+        $videoPath = '/videos/';
     }
 
     /**
