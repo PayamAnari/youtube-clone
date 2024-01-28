@@ -31,6 +31,27 @@ class VideosController extends Controller
 
         $thumbPath = '/videos/Thumbnails/';
         $videoPath = '/videos/';
+
+        $time = time();
+
+        $extension = $image_file->getClientOriginalExtension();
+        $imageName = $time . '.' . $extension;
+
+        $extension = $video_file->getClientOriginalExtension();
+        $videoName = $time . '.' . $extension;
+
+        $video->title = $request->input('title');
+        $video->video = $videoPath . $videoName;
+        $video->thumbnail = $thumbPath . $imageName;
+        $video->user = 'John Doe';
+        $video->views = rand(10, 100) . 'k views - ' . rand(1, 6) . 'days ago';
+
+        $image_file->move(public_path($thumbPath), $imageName);
+        $video_file->move(public_path($videoPath), $videoName);
+
+        if ($video->save()) {
+            return redirect()->route('videos.show', $video['id']);
+        }
     }
 
     /**
