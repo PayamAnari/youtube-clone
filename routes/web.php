@@ -20,9 +20,13 @@ Route::get('/', function () {
     return Inertia::render('Welcome', [
         'videos' => Video::inRandomOrder()->get(),
     ]);})->name('home');
-Route::get('/delete-video', function () {return Inertia::render('DeleteVideo');})->name('deleteVideo');
+Route::get('/delete-video', function () {
+    return Inertia::render('DeleteVideo', [
+        'videos' => Video::all(),
+    ]);})->name('deleteVideo');
 Route::get('/add-video', function () {return Inertia::render('AddVideo');})->name('addVideo');
 Route::get('/videos/{id}', [App\Http\Controllers\VideosController::class, 'show'])->name('videos.show');
+Route::delete('/videos/{id}', [App\Http\Controllers\VideosController::class, 'destroy'])->name('videos.destroy');
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
