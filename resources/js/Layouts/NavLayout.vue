@@ -165,9 +165,17 @@ const isNavOverlay = () => {
           </div>
          <ul 
          class="w-full px-5 py-2 p-2 mt-2">
-            <SideNavItem :openSideNav="true" iconString="Home" />      
-            <SideNavItem :openSideNav="true" iconString="Add video" />      
-            <SideNavItem :openSideNav="true" iconString="Delete Video" />  
+         <Link :href="route('home')">
+            <SideNavItem :openSideNav="true" iconString="Home" /> 
+          </Link>
+
+          <Link :href="route('addVideo')">
+            <SideNavItem :openSideNav="true" iconString="Add video" /> 
+          </Link>
+          
+          <Link :href="route('deleteVideo')">
+            <SideNavItem :openSideNav="true" iconString="Delete Video" /> 
+          </Link>  
             <div class="border-b border-b-gray-700 my-2.5"></div> 
             <SideNavItem :openSideNav="true" iconString="Subscriptions" />
             <SideNavItem :openSideNav="true" iconString="Library" />
