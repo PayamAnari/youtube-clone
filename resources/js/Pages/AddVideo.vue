@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import { Head, Link } from '@inertiajs/vue3';
+import { Head, router } from '@inertiajs/vue3';
 import NavLayout from '@/Layouts/NavLayout.vue';
 
 defineProps({ errors: Object})
@@ -45,6 +45,8 @@ const addVideo = () => {
     data.append('title', title.value)
     data.append('image', image.value)
     data.append('video', video.value)
+
+    router.post('/videos', data)
 }
 
 const getVideo = (e) => {
@@ -64,7 +66,7 @@ const getImage = (e) => {
    <NavLayout>
     <div class="max-w-xl mx-auto px-4">
       <div class="text-white font-extrabold text-3xl py-10">Add Video</div>
-       <form>
+       <form @submit.prevent="addVideo">
          <div>
             <div class="text-gray-200">Title</div>
              <input
@@ -93,7 +95,7 @@ const getImage = (e) => {
              "
               placeholder="Title"
              >
-             <span class="text-red-500">This is an error</span>
+             <span v-if="error.title" class="text-red-500">{{ error.title }}</span>
          </div>
          <div class="my-5"></div>
          <div>
@@ -119,7 +121,8 @@ const getImage = (e) => {
             focus:outline-none
              "
              >
-             <span class="text-red-500">This is an error</span>
+             <span v-if="error.image" class="text-red-500">{{ error.image }}</span>
+             <span v-if="errors && errors.image" class="text-red-500">{{ errors.image }}</span>
          </div>
          <div class="my-5"></div>
          <div>
@@ -145,7 +148,9 @@ const getImage = (e) => {
             focus:outline-none
              "
              >
-             <span class="text-red-500">This is an error</span>
+             <span v-if="error.video" class="text-red-500">{{ error.video }}</span>
+             <span v-if="errors && errors.video" class="text-red-500">{{ errors.video }}</span>
+
          </div>
          <div class="my-5"></div>
            <div class="float-right">
