@@ -1,6 +1,61 @@
 <script setup>
+import { ref } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import NavLayout from '@/Layouts/NavLayout.vue';
+
+defineProps({ errors: Object})
+
+let title = ref('')
+let image = ref('')
+let video = ref('')
+let error = ref({
+    title: null,
+    image: null,
+    video: null,
+})
+
+const addVideo = () => {
+   let err = false
+
+    error.value.title = null
+    error.value.image = null
+    error.value.video = null
+
+    if (!title.value) {
+        error.value.title = 'Title is required'
+        err = true
+    }
+
+    if (!image.value) {
+        error.value.image = 'Image is required'
+        err = true
+    }
+
+    if (!video.value) {
+        error.value.video = 'Video is required'
+        err = true
+    }
+
+    if (err) {
+        return
+    }
+
+    let data = new FormData()
+
+    data.append('title', title.value)
+    data.append('image', image.value)
+    data.append('video', video.value)
+}
+
+const getVideo = (e) => {
+    video.value = e.target.files[0]
+}
+
+const getImage = (e) => {
+    image.value = e.target.files[0]
+}
+
+
 </script>
 
 <template>
@@ -13,6 +68,7 @@ import NavLayout from '@/Layouts/NavLayout.vue';
          <div>
             <div class="text-gray-200">Title</div>
              <input
+             v-model="title"
              type="text"
              class="
              form-control
@@ -43,6 +99,7 @@ import NavLayout from '@/Layouts/NavLayout.vue';
          <div>
             <div class="text-gray-200">Thumbnail</div>
              <input
+             @change="getImage"
              type="file"
              class="
              form-control
@@ -68,6 +125,7 @@ import NavLayout from '@/Layouts/NavLayout.vue';
          <div>
             <div class="text-gray-200">Video/MP4</div>
              <input
+             @change="getVideo"
              type="file"
              class="
              form-control
