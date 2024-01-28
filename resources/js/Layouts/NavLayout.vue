@@ -47,9 +47,10 @@ const isNavOverlay = () => {
               <MenuIcon fillColor="#FFFFFF" :size="26" />
             </button>
             <div class="mx-2"></div>
-            <div class="flex text-white items-center justify-center mr-10 cursor-pointer">
-               YOUTUBE
-            </div>
+            <Link :href="route('home')" class="flex text-white items-center justify-center mr-10 cursor-pointer">
+              <img width="32" src="/images/YT-logo.png" alt="youtube" >
+               <img width="62" src="/images/YT-logo-text.png" alt="text" >
+            </Link>
           </div>
           <div class="w-[600px] md:block hidden">
               <div class="rounded-full flex items-center bg-[#222222]">
@@ -93,9 +94,20 @@ const isNavOverlay = () => {
          <ul 
          :class="[!openSideNav ? 'p-2' : 'px-5 pb-2 pt-[7px]']"
          class="mt-[60px] w-full">
-            <SideNavItem :openSideNav="openSideNav" iconString="Home" />      
-            <SideNavItem :openSideNav="openSideNav" iconString="Add video" />      
-            <SideNavItem :openSideNav="openSideNav" iconString="Delete Video" />  
+
+          <Link :href="route('home')">
+            <SideNavItem :openSideNav="openSideNav" iconString="Home" /> 
+          </Link>
+
+          <Link :href="route('addVideo')">
+            <SideNavItem :openSideNav="openSideNav" iconString="Add video" /> 
+          </Link>
+          
+          <Link :href="route('deleteVideo')">
+            <SideNavItem :openSideNav="openSideNav" iconString="Delete Video" /> 
+          </Link>
+                 
+             
             <div class="border-b border-b-gray-700 my-2.5"></div> 
             <SideNavItem :openSideNav="openSideNav" iconString="Subscriptions" />
             <SideNavItem :openSideNav="openSideNav" iconString="Library" />
@@ -146,10 +158,10 @@ const isNavOverlay = () => {
               <MenuIcon fillColor="#FFFFFF" :size="26" />
             </button>
             <div class="mx-2"></div>
-            <div class="flex text-white items-center justify-center mr-10 cursor-pointer">
-               <img class="" width="32" src="/images/YT-logo.png" alt="youtube" >
+            <Link :href="route('home')" class="flex text-white items-center justify-center mr-10 cursor-pointer">
+               <img width="32" src="/images/YT-logo.png" alt="youtube" >
                <img width="62" src="/images/YT-logo-text.png" alt="text" >
-            </div>
+            </Link>
           </div>
          <ul 
          class="w-full px-5 py-2 p-2 mt-2">
