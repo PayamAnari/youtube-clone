@@ -11,12 +11,12 @@ let sideNavOverlay = ref(null)
 let width = ref(document.documentElement.clientWidth)
 
 onMounted(() => {
-  resize()
-  sideNavOverlay.value.classList.value = sideNavOverlay.value.classList.value = 'hidden'
-  window.addEventListener('resize', () => {
-    width.value = document.documentElement.clientWidth;
     resize()
-  })
+    sideNavOverlay.value.classList.value = sideNavOverlay.value.classList.value += ' hidden'
+    window.addEventListener('resize', () => {
+        width.value = document.documentElement.clientWidth;
+        resize()
+    });
 })
 
 const resize = () => {
@@ -30,8 +30,8 @@ const resize = () => {
 
 const isNavOverlay = () => {
   if (usePage().url === '/') openSideNav.value = !openSideNav.value
-  if (usePage().url === '/addVideo') openSideNavOverlay.value = !openSideNavOverlay.value
-  if (usePage().url === '/deleteVideo') openSideNavOverlay.value = !openSideNavOverlay.value
+  if (usePage().url === '/add-video') openSideNavOverlay.value = !openSideNavOverlay.value
+  if (usePage().url === '/delete-video') openSideNavOverlay.value = !openSideNavOverlay.value
   if (width.value < 640) openSideNavOverlay.value = !openSideNavOverlay.value
   if (usePage().url !== '/' && width.value < 640) openSideNavOverlay.value = !openSideNavOverlay.value
   if (usePage().props.video) openSideNavOverlay.value = !openSideNavOverlay.value

@@ -5,6 +5,9 @@ import NavLayout from '@/Layouts/NavLayout.vue';
 
 defineProps({ errors: Object})
 
+let openSideNavOverlay = ref(false)
+
+
 let title = ref('')
 let image = ref('')
 let video = ref('')
@@ -90,7 +93,6 @@ const getImage = (e) => {
              rounded
              transition
              ease-in-out m-0
-             border-transparent
              focus:ring-0
              "
               placeholder="Title"
