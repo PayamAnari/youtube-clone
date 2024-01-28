@@ -147,7 +147,8 @@ const isNavOverlay = () => {
             </button>
             <div class="mx-2"></div>
             <div class="flex text-white items-center justify-center mr-10 cursor-pointer">
-               YOUTUBE
+               <img class="" width="32" src="/images/YT-logo.png" alt="youtube" >
+               <img width="62" src="/images/YT-logo-text.png" alt="text" >
             </div>
           </div>
          <ul 

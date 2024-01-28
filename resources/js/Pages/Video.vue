@@ -34,6 +34,13 @@ defineProps({
                  <div class="text-sm text-gray-400 font-extrabold">{{ video.views }}</div>
                </div>
              </div>
+             <div class="w-[500px] p-3 block sm:hidden">
+              <div v-for="vid in recommendedVideos" :key="vid">
+                <Link class="flex mb-3" :href="route('videos.show', { id: vid.id })">
+                  <RecommendedVideos :vid="vid" />
+                </Link>
+              </div>
+           </div>
              <div class="bg-[#3F3F3F] rounded-lg w-full p-3 text-white">
                 <div class="text-white text-lg font-extrabold">{{ video.views }}</div>
                 <div class="text-sm font-extrabold mb-6">Hi Developers, In this tutorial, we will build a full-stack 
@@ -45,20 +52,21 @@ defineProps({
                    <div class="text-white text-lg font-extrabold">
                        {{ comments.length }} Comments
                    </div>
-                   <div class="flex items-flex mb-4 mt-2 ">
+                 <div v-for="comment in comments" :key="comment">
+                  <div class="flex items-flex mb-4 mt-2 ">
                     <img 
                       class="rounded-full mt-2 w-12 h-12"
                       :src="`https://picsum.photos/id/${(Math.random() * 100).toFixed(0)}/100` || ''"
                      />
                      <div class="pl-6 mt-1">
                       <div class="text-white font-extrabold flex items-baseline">
-                      <div>John Doe</div>
+                      <div>{{ comment.user }}</div>
                         <div class="text-gray-400 pl-3">
-                           10 days ago
+                           {{ comment.time }}
                         </div>
                       </div>
                       <div class="text-gray-200 text-sm font-semibold">
-                        the application, such as video uploads, file uploads, and video playback when hovering over a thumbnail.
+                        {{ comment.text }}
                        </div>
                        <div class="mt-4 flex items-center">
                          <ThumbUpOutline fillColor="#FFFFFF" :size="20" class="pr-2" />
@@ -69,20 +77,15 @@ defineProps({
                        </div>
                      </div>
                    </div>
+                 </div>
                 </div>
            </div>
            <div class="w-[500px] p-3 sm:block hidden">
-            <div class="flex mb-3">
-              <RecommendedVideos 
-              :vid="{
-              title: 'Big city in amsterdam',
-              video: '/videos/car.mp4',
-              thumbnail: '/videos/Thumbnails/car.png',
-              user: 'Emmy Watson',
-              views: '14k views - 10 days ago',
-            }"
-            />
-            </div>
+              <div v-for="vid in recommendedVideos" :key="vid">
+                <Link class="flex mb-3" :href="route('videos.show', { id: vid.id })">
+                  <RecommendedVideos :vid="vid" />
+                </Link>
+              </div>
            </div>
         </div>
     </NavLayout>
