@@ -43,9 +43,9 @@ class VideosController extends Controller
         $video->title = $request->input('title');
         $video->video = $videoPath . $videoName;
         $video->thumbnail = $thumbPath . $imageName;
-        $video->user = 'John Doe';
+        $userNames = ['John Doe', 'Alice Pit', 'Bob Marly', 'Eve Jane', 'Charlie Mark', 'Mallory Doe', 'Trent Pit', 'Oscar Marly', 'Victor Jane', 'Walter Mark'];
+        $video->user = $userNames[array_rand($userNames)];
         $video->views = rand(10, 100) . 'k views - ' . rand(1, 6) . 'days ago';
-
         $image_file->move(public_path($thumbPath), $imageName);
         $video_file->move(public_path($videoPath), $videoName);
 

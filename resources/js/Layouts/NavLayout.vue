@@ -81,7 +81,7 @@ const isNavOverlay = () => {
              <img
              class="rounded-full mx-8"
              width="35"
-             src="https://yt3.ggpht.com/yti/AGOGRCov6Dg4QEFhzY2CNxTV6tTEgWS9rMhOK3BxUQJj=s88-c-k-c0x00ffffff-no-rj"
+             src="https://www.unifiedhomeremodeling.com/wp-content/uploads/2021/02/6.jpg"
              >
           </div>
       </div>
