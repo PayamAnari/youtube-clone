@@ -147,3 +147,16 @@ php artisan serve
 - **Vue.js 3** for dynamic and reactive user interfaces.
 - **Inertia.js** for server-side rendering, enhancing frontend performance.
 - **Tailwind CSS** for a utility-first styling approach, ensuring a responsive and visually appealing design.
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,vue,tailwind,mysql,php,laravel" />
+      <a href="https://inertiajs.com/">
+    <img src="https://img.shields.io/badge/Inertia.js-3-lightblue" alt="Inertia.js">
+    <img src="https://img.shields.io/badge/Blade-Used-brightgreen" alt="Blade">
+
+  </a>
+  </a>
+</p>
+
+---
