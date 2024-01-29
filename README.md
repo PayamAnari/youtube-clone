@@ -38,3 +38,12 @@ Embark on a multimedia journey with the Full Stack YouTube Clone, a harmonious f
 
 Dive into the immersive world of the Full Stack YouTube Clone's Home Page, where content creators and viewers converge in a seamless digital experience. This Vue.js-powered interface boasts a responsive grid layout showcasing user-created videos with details like likes, comments, views, and upload time. The dynamic hamburger menu, adorned with smooth animations, adds a touch of elegance to navigation. Explore recommended videos intelligently curated for each user, ensuring a personalized journey.
 
+<p align="center">
+  <img width="400" src="https://live.staticflickr.com/65535/53496328336_ecd52440ae_z.jpg" alt="Image 1">
+  
+  <img width="200" src="https://live.staticflickr.com/65535/53474320513_3cae692841_w.jpg" alt="Image 2">
+  
+  <img width="150" src="https://live.staticflickr.com/65535/53474179781_8b1a378ff6_w.jpg" alt="Image 3">
+</p>
+
+---
