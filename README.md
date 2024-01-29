@@ -134,3 +134,16 @@ php artisan breeze:install vue --ssr
 php artisan serve
 ```
 ---
+
+## Technologies Used
+
+### Backend:
+
+- **Laravel 10** for robust server-side functionality.
+- **MySQL database** for efficient data storage.
+
+### Frontend:
+
+- **Vue.js 3** for dynamic and reactive user interfaces.
+- **Inertia.js** for server-side rendering, enhancing frontend performance.
+- **Tailwind CSS** for a utility-first styling approach, ensuring a responsive and visually appealing design.
