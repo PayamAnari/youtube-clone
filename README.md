@@ -8,7 +8,7 @@
 ---
 <h3 align="center">
   <strong>
-      💥 Youtube clone 💥
+      📹 Youtube clone 📹
   </strong>
 </h3>
 
