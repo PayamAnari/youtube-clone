@@ -81,3 +81,11 @@ With a clean and modern aesthetic, the "Delete Video" page is an integral part o
 </p>
 
 ---
+
+## Video Page
+
+- This visually engaging and user-friendly space is designed to showcase a curated selection of videos tailored to your preferences.
+
+As you hover over each video card, a dynamic preview unfolds, seamlessly transitioning from a thumbnail to a video player, providing a sneak peek into the content. The smooth play/pause interaction enhances user control, allowing you to decide which video captures your interest.
+
+The layout is thoughtfully arranged, with each video accompanied by essential details such as the video title, uploader, and view count. The inclusion of a verification badge adds credibility to the uploader, ensuring a trustworthy and enjoyable viewing experience.
