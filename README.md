@@ -15,7 +15,7 @@
 ---
 <p align="center">
   <img 
-    width="1200"
+    width="800"
     alt="home"
     src="https://live.staticflickr.com/65535/53496770015_47768548ed.jpg"/>
 </p>
