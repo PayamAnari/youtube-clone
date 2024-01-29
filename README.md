@@ -33,3 +33,8 @@
 Embark on a multimedia journey with the Full Stack YouTube Clone, a harmonious fusion of Vue.js, Javascript, Tailwind CSS, Laravel, Inertia JS, and PHP. This comprehensive web application seamlessly replicates YouTube's core functionalities, offering a responsive and dynamic user interface. Users can contribute seamlessly by adding videos with titles, thumbnails, and content, while also enjoying the power to manage their uploads through an intuitive delete feature. Navigate through the animated hamburger menu, engage in a realistic environment with dynamically generated likes, views, and comments, and explore personalized recommendations. This Full Stack YouTube Clone promises a rich and immersive user experience, empowering users with the ability to both contribute and curate content effortlessly.
 
 ---
+
+## Home Page
+
+Dive into the immersive world of the Full Stack YouTube Clone's Home Page, where content creators and viewers converge in a seamless digital experience. This Vue.js-powered interface boasts a responsive grid layout showcasing user-created videos with details like likes, comments, views, and upload time. The dynamic hamburger menu, adorned with smooth animations, adds a touch of elegance to navigation. Explore recommended videos intelligently curated for each user, ensuring a personalized journey.
+
