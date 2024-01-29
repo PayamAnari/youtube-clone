@@ -181,3 +181,8 @@ Commit your changes and push them to your forked repository.
 Create a pull request to the original repository, explaining your changes and their significance.
 
 ---
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+---
