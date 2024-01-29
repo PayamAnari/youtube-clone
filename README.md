@@ -93,7 +93,7 @@ The layout is thoughtfully arranged, with each video accompanied by essential de
 <p align="center">
   <img width="400" src="https://live.staticflickr.com/65535/53495456732_a4744315fd.jpg" alt="Image 1">
   
-  <img width="200" src="https://live.staticflickr.com/65535/53496490528_3b9bbd17f0_n.jpg" alt="Image 2">
+  <img width="200" src="https://live.staticflickr.com/65535/53496346001_6efc458f48_n.jpg" alt="Image 2">
   
   <img width="150" src="https://live.staticflickr.com/65535/53496340666_5031febd34_n.jpg" alt="Image 3">
 </p>
