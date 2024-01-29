@@ -108,3 +108,29 @@ The layout is thoughtfully arranged, with each video accompanied by essential de
   
   <img width="150" src="https://live.staticflickr.com/65535/53496651984_0075b01e0a_n.jpg" alt="Image 3">
 </p>
+
+---
+
+## Installation
+
+
+```
+git clone https://github.com/PayamAnari/youtube-clone.git
+
+composer install 
+
+cp .env.example .env 
+
+php artisan cache:clear 
+
+composer dump-autoload 
+
+php artisan key:generate
+
+composer require laravel/breeze --dev
+
+php artisan breeze:install vue --ssr
+
+php artisan serve
+```
+---
