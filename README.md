@@ -75,7 +75,7 @@ With a clean and modern aesthetic, the "Delete Video" page is an integral part o
 <p align="center">
   <img width="400" src="https://live.staticflickr.com/65535/53496761915_cd1358673e.jpg" alt="Image 1">
   
-  <img width="200" src="https://live.staticflickr.com/65535/53496486498_6c573f22db_n.jpg" alt="Image 2">
+  <img width="200" src="https://live.staticflickr.com/65535/53496490528_3b9bbd17f0_n.jpg" alt="Image 2">
   
   <img width="150" src="https://live.staticflickr.com/65535/53496636094_4853e42183_n.jpg" alt="Image 3">
 </p>
