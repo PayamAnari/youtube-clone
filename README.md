@@ -63,3 +63,11 @@ The minimalist yet visually appealing layout, adorned with vibrant accents and a
 </p>
 
 ---
+
+## Delete Video Page
+
+- The "Delete Video" page provides a straightforward and efficient interface for managing your uploaded videos. Each entry in the table displays a preview of the video along with its title, offering a quick overview of your content.
+
+The page layout is carefully designed to prioritize clarity and ease of use. Video titles are presented prominently, and users can effortlessly delete videos with a single click using the intuitive "Delete" button. The dynamic presentation of video previews enhances the overall user experience, allowing content creators to identify and manage their videos seamlessly.
+
+With a clean and modern aesthetic, the "Delete Video" page is an integral part of the Full Stack YouTube Clone, empowering users to curate and control their content effortlessly.
