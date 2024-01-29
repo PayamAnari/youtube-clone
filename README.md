@@ -47,3 +47,9 @@ Dive into the immersive world of the Full Stack YouTube Clone's Home Page, where
 </p>
 
 ---
+
+## Add Video Page
+
+- This meticulously designed Vue.js-powered interface offers content creators a seamless platform to upload and share their masterpieces. The user-friendly form captures essential details, including the video title, a captivating thumbnail, and the dynamic video file in MP4 format. With real-time error handling and intuitive UI elements, the page ensures a smooth uploading process.
+
+The minimalist yet visually appealing layout, adorned with vibrant accents and a dark theme, enhances the user experience. Users can effortlessly navigate through the form, supported by dynamic feedback on any missing or incorrect information. The page encapsulates a perfect blend of functionality and aesthetics, empowering creators to showcase their content effortlessly on this modern YouTube clone.
