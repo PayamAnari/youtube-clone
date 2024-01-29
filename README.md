@@ -59,7 +59,7 @@ The minimalist yet visually appealing layout, adorned with vibrant accents and a
   
   <img width="200" src="https://live.staticflickr.com/65535/53496486498_6c573f22db_n.jpg" alt="Image 2">
   
-  <img width="150" src="https://live.staticflickr.com/65535/53496628109_2433e0d853_n.jpg" alt="Image 3">
+  <img width="150" src="https://live.staticflickr.com/65535/53496636094_4853e42183_n.jpg" alt="Image 3">
 </p>
 
 ---
