@@ -95,7 +95,7 @@ The layout is thoughtfully arranged, with each video accompanied by essential de
   
   <img width="200" src="https://live.staticflickr.com/65535/53496346001_6efc458f48_n.jpg" alt="Image 2">
   
-  <img width="150" src="https://live.staticflickr.com/65535/53496340666_5031febd34_n.jpg" alt="Image 3">
+  <img width="150" src="https://live.staticflickr.com/65535/53496767275_f3b896b460_n.jpg" alt="Image 3">
 </p>
 
 ---
