@@ -111,6 +111,29 @@ The layout is thoughtfully arranged, with each video accompanied by essential de
 
 ---
 
+## Table of Contents
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+  
+--- 
+
+## Key Features
+
+- **Upload and Showcase:** Seamlessly upload your videos and create an immersive showcase that reflects your style. Add captivating titles and thumbnails to make your content stand out.
+
+- **Intuitive Video Management:** Manage your uploaded videos with ease. Edit titles, update thumbnails, and keep track of views and comments in one centralized hub.
+
+- **User-Friendly Interface:** Our user-friendly interface ensures a smooth uploading experience. A few clicks, and your content is ready to be shared with the world.
+
+- **Interactive Video Player:** Engage your audience with an interactive video player that supports smooth playback. Users can easily play, pause, and explore your content at their own pace.
+
+- **Verification Badges:** Build credibility with a verification badge on your profile, assuring viewers that your content is authentic and trustworthy.
+
+---
+
 ## Installation
 
 
